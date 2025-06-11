@@ -16,7 +16,7 @@ header, footer {
 }
 
 strong{
-    color: #65a903; /* Puedes ajustar este color a tu gusto */
+    color: #65a903; 
 }
 nav a {
   color: white;
@@ -27,7 +27,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffcc00; /* Puedes ajustar este color a tu gusto */
+  color: #ffcc00; 
   transform: scale(1.1);
 }
 
@@ -72,7 +72,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #2ecc40; /* verde */
+  background-color: #2ecc40; 
   color: #fff;
 }
 
