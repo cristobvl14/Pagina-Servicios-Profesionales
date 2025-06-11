@@ -1,0 +1,172 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; padding: 0; 
+    line-height: 1.6; 
+}
+
+header, footer { 
+    background-color: #333; 
+    color: white; 
+    padding: 1em; 
+    text-align: center; 
+}
+
+strong{
+    color: #65a903; /* Puedes ajustar este color a tu gusto */
+}
+nav a {
+  color: white;
+  margin: 0 1em;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00; /* Puedes ajustar este color a tu gusto */
+  transform: scale(1.1);
+}
+
+
+nav { 
+    background-color: #444; 
+    padding: 0.5em; 
+    text-align: center; 
+}
+
+    
+main { 
+    padding: 1em; 
+    max-width: 800px; 
+    margin: auto; 
+}
+
+section { 
+    margin-bottom: 2em; 
+}
+    
+form label { 
+    display: block; 
+    margin-top: 1em; 
+}
+    
+form input, form textarea, form select, form button { 
+    width: 100%;
+    padding: 0.5em; 
+    margin-top: 0.3em; 
+}
+    
+form button { 
+    background-color: #333; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+}
+
+button[type="submit"] {
+  transition: background-color 0.5s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #2ecc40; /* verde */
+  color: #fff;
+}
+
+#btnVolverArriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  font-size: 1.5em;
+  padding: 0.5em 0.7em;
+  border: none;
+  border-radius: 50%;
+  text-decoration: none;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#btnVolverArriba:hover {
+  background-color: #ffcc00;
+  color: black;
+  transform: scale(1.1);
+}
+
+.fotogerente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.testimonio-item {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem 1rem 1rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonio-foto {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #e0e0e0;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.servicios-grid article {
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+#contacto {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #f8f8f8;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+#contacto header {
+  text-align: center;
+}
+
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 700px) {
+  .servicios-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Servicios profesionales personalizados para tu negocio.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="imagenes/consulta.png" type="image/png">
+
+  <title>Servicios Profesionales</title>
+  
+</head>
+<body>
+  <!-- Encabezado principal del sitio -->
+  <header id="header">
+    <h1>Asesoría Integral 🌱</h1>
+  </header>
+
+  <!-- Barra de navegación para acceder a las diferentes secciones de la página -->
+  <nav>
+    <a href="#bienvenida">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#testimonios">Testimonios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <!-- Sección de bienvenida y biografía-->
+    <section id="bienvenida">
+      <header><h2>Bienvenida y Biografía</h2></header>
+      <div class="fotogerente">
+        <img src="/imagenes/gerente.webp" alt="Foto de Armando Casas (Dueño de la Empresa)" width="400" height="300">
+      </div>
+      <p> Mi nombre es Armando Casas, profesional dedicado a brindar soluciones prácticas y efectivas a emprendedores y pequeñas empresas. Cuento con experiencia en asesoría estratégica y gestión de negocios, y mi enfoque es acompañar a cada cliente de forma cercana y personalizada. Mi objetivo es ayudarte a ordenar, fortalecer y hacer crecer tu proyecto con claridad y confianza. Creo en el trabajo colaborativo, la mejora continua y en entregar un servicio transparente y útil desde el primer contacto.
+
+</p>
+    </section>
+
+    <!-- Sección que describe los servicios ofrecidos y sus precios -->
+    <section id="servicios">
+      <header><h2>Servicios y Precios</h2></header>
+      <div class="servicios-grid">
+        <article>
+          <h3>Consultoría básica</h3>
+          <p>Evaluación de tu negocio y recomendaciones iniciales. <strong>$50.000 CLP</strong></p>
+        </article>
+        <article>
+          <h3>Plan estratégico mensual</h3>
+          <p>Asesoría continua y seguimiento de metas. <strong>$200.000 CLP</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección de testimonios de clientes -->
+    <section id="testimonios">
+      <header><h2>Testimonios de Clientes</h2></header>
+      <div class="testimonios-grid">
+        <div class="testimonio-item">
+          <img src="imagenes/empresa1.png" alt="Logo empresa Grupo Textil Andina S.A." class="testimonio-foto">
+          <div>
+            “Gracias al trabajo realizado con Armando, logramos reorganizar nuestras operaciones y mejorar la eficiencia de nuestro equipo. Su enfoque estratégico y claridad en la comunicación fueron claves para avanzar sin perder tiempo.”
+            <br> María López, Gerente General, Grupo Textil Andina S.A.
+          </div>
+        </div>
+        <div class="testimonio-item">
+          <img src="imagenes/empresa2.jpg" alt= "Logo empresa Alimentos del Sur Ltda." class="testimonio-foto">
+          <div>
+            “En solo tres meses de asesoría, pudimos optimizar nuestros procesos internos y reducir costos operativos en más de un 20%. Lo recomendaría sin dudar a cualquier empresa que necesite orden y visión clara para crecer.”
+            <br> Carlos Núñez, Director de Operaciones, Alimentos del Sur Ltda.
+          </div>
+        </div>
+        <div class="testimonio-item">
+          <img src="imagenes/empresa3.jpg" alt="Logo empresa Innovacón Ingeniería S.A." class="testimonio-foto">
+          <div>
+            “Buscábamos una mirada externa para reestructurar nuestros servicios y definir una nueva propuesta de valor. La experiencia con este equipo superó nuestras expectativas y nos dio el impulso que necesitábamos.”
+            <br> Verónica Astudillo, Subgerente de Marketing, Innovacón Ingeniería S.A.
+          </div>
+        </div>
+        <div class="testimonio-item">
+          <img src="imagenes/empresa4.webp" alt="Logo empresa Tecnoservicios Integrales Ltda." class="testimonio-foto">
+          <div>
+            “Trabajar con este servicio fue un acierto. Nos ayudaron a identificar puntos ciegos en nuestra estructura organizacional y nos entregaron herramientas concretas para enfrentarlos. Hoy tenemos una dirección más clara y equipos mejor alineados.”
+            <br> Rodrigo Salas, CEO, Tecnoservicios Integrales Ltda.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de contacto con formulario para que los usuarios envíen mensajes -->
+    <section id="contacto">
+      <header><h2>Formulario de Contacto</h2></header>
+      <form>
+        <!-- Campo para ingresar el nombre del usuario -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required minlength="5">
+
+        <!-- Campo para ingresar el correo electrónico del usuario -->
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required >
+
+        <!-- Selector para elegir el servicio de interés -->
+        <label for="servicio">Servicio de interés:</label>
+        <select id="servicio" name="servicio" required>
+          <option value="">Seleccione uno</option>
+          <option value="consultoria">Consultoría básica</option>
+          <option value="estrategico">Plan estratégico mensual</option>
+        </select>
+
+        <!-- Área de texto para que el usuario escriba su mensaje -->
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required  minlength="5"></textarea>
+
+        <!-- Botón para enviar el formulario -->
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página con derechos de autor -->
+  <footer>
+    <p>&copy; 2025 Armando Casas. Todos los derechos reservados.</p>
+  </footer>
+  <a href="#header" id="btnVolverArriba" title="Volver arriba">⬆</a>
+
+</body>
+</html>
